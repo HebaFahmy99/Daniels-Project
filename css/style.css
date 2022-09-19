@@ -1,0 +1,509 @@
+ :root {
+     --main-color: #343434;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ .navbar-expand-lg .navbar-nav .nav-link {
+     color: black;
+
+     position   : relative;
+     transition : all 1s;
+     margin-left: 15px;
+ }
+
+ .navbar-expand-lg .navbar-nav .nav-link::after {
+     content         : '';
+     width           : 0%;
+     height          : 2px;
+     background-color: black;
+     position        : absolute;
+     bottom          : 5px;
+     left            : 10px;
+ }
+
+ .navbar-expand-lg .navbar-nav .nav-link:hover::after {
+     animation: link-moving 1s;
+ }
+
+ @keyframes link-moving {
+     0% {
+         width: 0%;
+     }
+
+     100% {
+         width: 70%;
+     }
+
+ }
+
+ header {
+     background-image     : url("../img/bg.jpg");
+     background-size      : cover;
+     background-position  : center center;
+     background-attachment: fixed;
+ }
+
+ header h5 {
+     font-weight: 900;
+ }
+
+ header h1::after {
+     content    : "";
+     font-weight: 700;
+     animation  : heading-moving 12s infinite;
+ }
+
+ @keyframes heading-moving {
+     0% {
+         content: 'D|';
+     }
+
+     1.5% {
+         content: 'De|';
+     }
+
+     3% {
+         content: 'Des|';
+     }
+
+     4.5% {
+         content: 'Desi|';
+     }
+
+     6% {
+         content: 'Desig|';
+     }
+
+     7.5% {
+         content: 'Design|';
+     }
+
+     9% {
+         content: 'Designe|';
+     }
+
+     10.5% {
+         content: 'Designer|';
+     }
+
+     12% {
+         content: 'Designe|';
+     }
+
+     13.5% {
+         content: 'Design|';
+     }
+
+     15% {
+         content: 'Desig|';
+     }
+
+     16.5% {
+         content: 'Desi|';
+     }
+
+     18% {
+         content: 'Des|';
+     }
+
+     19.5% {
+         content: 'De|';
+     }
+
+     21% {
+         content: 'D|';
+     }
+
+     22.5% {
+         content: '|';
+     }
+
+     24% {
+         content: 'D|';
+     }
+
+     25.5% {
+         content: 'De|';
+     }
+
+     26% {
+         content: 'Dev|';
+     }
+
+     27.5% {
+         content: 'Deve|';
+     }
+
+     29% {
+         content: 'Devel|';
+     }
+
+     30.5% {
+         content: 'Develo|';
+     }
+
+     32% {
+         content: 'Develop|';
+     }
+
+     33.5% {
+         content: 'Develope|';
+     }
+
+     35% {
+         content: 'Developer|';
+     }
+
+     36.5% {
+         content: 'Develope|';
+     }
+
+     38% {
+         content: 'Develop|';
+     }
+
+     39.5% {
+         content: 'Develo|';
+     }
+
+     41% {
+         content: 'Devel|';
+     }
+
+     42.5% {
+         content: 'Deve|';
+     }
+
+     44% {
+         content: 'Dev|';
+     }
+
+     45.5% {
+         content: 'De|';
+     }
+
+     47% {
+         content: 'D|';
+     }
+
+     48.5% {
+         content: '|';
+     }
+
+     50% {
+         content: 'L|';
+     }
+
+     51.5% {
+         content: 'La|';
+     }
+
+     53% {
+         content: 'Lar|';
+     }
+
+     54.5% {
+         content: 'Larr|';
+     }
+
+     56% {
+         content: 'Larry|';
+     }
+
+     57.5% {
+         content: 'Larry |';
+     }
+
+     59% {
+         content: 'Larry D|';
+     }
+
+     60.5% {
+         content: 'Larry Da|';
+     }
+
+     62% {
+         content: 'Larry Dan|';
+     }
+
+     63.5% {
+         content: 'Larry Dani|';
+     }
+
+     65% {
+         content: 'Larry Danie|';
+     }
+
+     66.5% {
+         content: 'Larry Daniel.|';
+     }
+
+     68% {
+         content: 'Larry Danie|';
+     }
+
+     69.5% {
+         content: 'Larry Dani|';
+     }
+
+     71% {
+         content: 'Larry Dan|';
+     }
+
+     72.5% {
+         content: 'Larry Da|';
+     }
+
+     74% {
+         content: 'Larry D|';
+     }
+
+     75.5% {
+         content: 'Larry |';
+     }
+
+     77% {
+         content: 'Larry|';
+     }
+
+     78.5% {
+         content: 'Larr|';
+     }
+
+     80% {
+         content: 'Lar|';
+     }
+
+     81.5% {
+         content: 'La|';
+     }
+
+     83% {
+         content: 'L|';
+     }
+
+     85% {
+         content: '|';
+     }
+ }
+
+ header .social-icon {
+     width           : 2.3rem;
+     height          : 2.3rem;
+     background-color: #00101B;
+     cursor          : pointer;
+ }
+
+
+#about .inner-item{ 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+#about .about-img{ 
+    position: relative;
+}
+#about .about-img img{ 
+    width: 90%;
+    position: relative; 
+    top: 0; 
+    left: 100%; 
+    transform: translateX(-100%);
+    z-index: 99;
+}
+
+#about .about-img::after{ 
+    content: ''; 
+    width: 80%; 
+    height: 80%;
+    position: absolute;
+    left: 0; 
+    bottom: -30px;
+    background-image: url(../img/dots.png); 
+    background-repeat: repeat; 
+    z-index: -1;
+}
+
+
+ #services .services-heading h3,
+ #work .work-heading h3,
+ #tectmonials .client-heading h3,
+ #blog .blog-heading h3,
+ #contact .contact-heading h3 {
+     position   : relative;
+     font-size  : 40px;
+     display    : inline-block;
+     font-weight: 900;
+     z-index    : 4;
+
+ }
+
+ #services .services-heading h3::after,
+ #work .work-heading h3::after,
+ #tectmonials .client-heading h3::after,
+ #blog .blog-heading h3::after,
+ #contact .contact-heading h3::after {
+     content          : '';
+     width            : 100%;
+     height           : 20px;
+     background-image : url(../img/dots.png);
+     background-repeat: repeat;
+     position         : absolute;
+     bottom           : -8px;
+     left             : 0px;
+     z-index          : -1;
+ }
+
+ #services .service-icon {
+     width           : 4rem;
+     height          : 4rem;
+     background-color: #f8f8f8;
+     transition      : all 1s;
+ }
+
+ #services .inner-item:hover .service-icon {
+     color           : white;
+     background-color: black;
+ }
+
+ #services h6 {
+     font-size    : 18px;
+     font-weight  : 800;
+     margin-bottom: 15px;
+ }
+
+ #work ul li {
+     padding    : 0 15px;
+     font-weight: 800;
+     position   : relative;
+ }
+
+ #work ul .active::after {
+     content         : '';
+     width           : 46%;
+     height          : 2px;
+     background-color: black;
+     position        : absolute;
+     bottom          : 0;
+     left            : 13px;
+ }
+
+ #work .inner-item {
+     overflow: hidden;
+ }
+
+ #work .inner-item:hover .portfolio-overlay {
+     opacity: 1;
+     top    : 5px;
+ }
+
+ #work .portfolio-overlay {
+     position        : absolute;
+     top             : 7%;
+     bottom          : 5px;
+     left            : 5px;
+     right           : 5px;
+     opacity         : 0;
+     background-color: rgba(255, 255, 255, 0.897);
+     transition      : all 0.7s;
+ }
+
+ #work .ico {
+     width           : 2rem;
+     height          : 2rem;
+     background-color: black;
+ }
+
+ #work .ico i {
+     color: white;
+ }
+
+ #work .ico:hover {
+     background-color: white;
+     border          : 1px solid black;
+ }
+
+ #work .ico:hover i {
+     color: black;
+ }
+
+ #tectmonials span {
+     font-size  : 12px;
+     font-weight: 600;
+     color      : #888;
+ }
+
+ #tectmonials button,
+ #blog button {
+     width           : 0.8rem;
+     height          : 0.8rem;
+     border-radius   : 50%;
+     background-color: #869791;
+ }
+
+ #blog .card h6 {
+     font-size  : 13px;
+     font-weight: 700;
+ }
+
+ #blog .card-img {
+     overflow: hidden;
+ }
+
+ #blog .card-img img {
+     transition: all 1s;
+ }
+
+ #blog .card-img:hover img {
+     transform: scale(1.19, 1.19);
+ }
+
+ #blog .card-link {
+     position: relative;
+ }
+
+ #blog .card-link::after {
+     content         : '';
+     width           : 22%;
+     height          : 2px;
+     background-color: #869791;
+     position        : absolute;
+     bottom          : 0;
+     left            : 0px;
+ }
+
+ #contact .contact-icon{  
+    width: 3rem; 
+    height: 3rem; 
+    background-color: #f8f8f8;
+ }
+ #contact .contact-icon i{ 
+    font-size: 25px;
+ }
+ #contact .inner-item .contact-icon , #contact .inner-item i{ 
+    transition: all 1s;
+ }
+ #contact .inner-item:hover .contact-icon{ 
+    background-color: black;
+ }
+ #contact .inner-item:hover i{ 
+    color: white;
+ }
+
+ #contact button:hover, #about .btn-1:hover{ 
+    background-color: white; 
+    color: black;
+ }
